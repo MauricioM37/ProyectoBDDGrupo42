@@ -3,7 +3,7 @@
 ### Licenciatura en Sistemas de Información  
 **Asignatura:** Bases de Datos I  
 **Proyecto de Investigación:** Réplicas de Base de Datos  
-**Alumnos:** Martinez Mauricio Marcelo – Matias Herrera – Antonela Famular – Mateo Alejo Falcon  
+**Alumnos:** Martinez Mauricio Marcelo – Herrera Matias  – Famular Antonela  – Falcon Mateo Alejo   
 **Profesores:** Lic. Villegas Dario O. – Lic. Vallejos Walter O. – Exp. Cuzziol Juan J. – Lic. Badaracco Numa  
 **Año:** 2025  
 
@@ -97,8 +97,7 @@ Estos experimentos demostraran que la replicación puede mejorar significativame
 ---
 
 # Capítulo V: Conclusiones
-El análisis realizado confirma que la replicación es una técnica indispensable para los sistemas modernos que requieren disponibilidad continua y baja latencia.  
-En conclusión, el proyecto permite comprender los fundamentos y los desafíos prácticos de la replicación de bases de datos,demuestra que esta técnica, correctamente implementada, mejora la robustez y confiabilidad de los sistemas de información.  
+El análisis realizado confirma que la replicación es una técnica indispensable para los sistemas de información que requieren alta disponibilidad, consistencia y bajo tiempo de respuesta. A lo largo del proyecto se comprobó que su correcta implementación permite mantener la continuidad del servicio ante fallos, distribuir la carga de trabajo y optimizar el rendimiento general del sistema. También se destacó la importancia de una buena configuración, el monitoreo constante y el diseño adecuado de la topología para garantizar estabilidad y recuperación ante fallas.
 
 ---
 
