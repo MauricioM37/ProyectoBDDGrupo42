@@ -231,13 +231,14 @@ BEGIN
 END$$
 
 ----------------------------------------------
--- FUNCIÓN TABULAR: Productos con Bajo Stock
+-- PROCEDIMIENTO: Productos con Bajo Stock
+-- Nota: MySQL no soporta RETURNS TABLE, se usa procedimiento almacenado
 ----------------------------------------------
-DROP FUNCTION IF EXISTS F_ProductosBajoStock$$
-CREATE FUNCTION F_ProductosBajoStock(p_umbral INT)
-RETURNS TABLE
-RETURN
-(
+DROP PROCEDURE IF EXISTS SP_ProductosBajoStock$$
+CREATE PROCEDURE SP_ProductosBajoStock(
+    IN p_umbral INT
+)
+BEGIN
     SELECT 
         producto_id,
         nombre_producto,
@@ -245,8 +246,8 @@ RETURN
         precio
     FROM productos
     WHERE stock < p_umbral AND estado = 1
-    ORDER BY stock ASC
-)$$
+    ORDER BY stock ASC;
+END$$
 
 DELIMITER ;
 

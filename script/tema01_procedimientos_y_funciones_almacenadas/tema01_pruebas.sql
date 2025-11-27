@@ -209,7 +209,7 @@ ORDER BY usuario_id;
 -- -----------------------------------------
 SELECT '=== Test 6.1: Productos con stock menor a 15 ===' AS test;
 
-SELECT * FROM F_ProductosBajoStock(15);
+CALL SP_ProductosBajoStock(15);
 
 
 -- -----------------------------------------
@@ -217,7 +217,7 @@ SELECT * FROM F_ProductosBajoStock(15);
 -- -----------------------------------------
 SELECT '=== Test 6.2: Productos con stock crítico (< 5) ===' AS test;
 
-SELECT * FROM F_ProductosBajoStock(5);
+CALL SP_ProductosBajoStock(5);
 
 
 -- ========================================
